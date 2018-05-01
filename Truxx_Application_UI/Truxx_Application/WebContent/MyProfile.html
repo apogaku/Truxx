@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Register</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<style>
+
+body
+{
+	background: #f5f5f5;
+}
+
+h5
+{
+	font-weight: 400;
+}
+
+.container
+{
+	margin-top: 80px;
+	width: 400px;
+	height: 700px;
+}
+
+.tabs .indicator
+{
+	background-color: #e0f2f1;
+	height: 60px;
+	opacity: 0.3;
+}
+
+.form-container
+{
+	padding: 40px;
+	padding-top: 10px;
+}
+
+.confirmation-tabs-btn
+{
+	position: absolute;
+}
+</style>
+</head>
+<script type="text/javascript" src="js/jquery.js"></script>
+  
+ 
+  <script type="text/javascript"  src="js/myProfileData.js"></script>
+
+  <body>
+
+
+<div id="register" class="col s12">
+		<form class="col s12">
+			<div class="form-container" >
+				<h3 class="teal-text">My Profile</h3>
+				<p>
+		
+		<span style=color:black>Registered as :</span>
+    <label>
+   
+      <span style=color:black id="myspan"></span>
+    </label>
+   
+  </p>
+				<div class="row" >
+					<div class="input-field col s4">
+						<input id="first_name" type="text" class="validate" readonly placeholder="  ">
+						<label for="first_name">First Name</label>
+					</div>
+					<div class="input-field col s4">
+						<input id="last_name" type="text" class="validate" readonly placeholder="  ">
+						<label for="last_name">Last Name</label>
+					</div>
+					<div class="input-field col s4">
+						<input id="email" type="email" class="validate" readonly placeholder="  ">
+						<label for="email">Email</label>
+					</div>
+				</div>
+			
+				<div class="row">
+					<div class="input-field col s4">
+						<input id="street" type="text" class="validate" readonly placeholder="  ">
+						<label for="street">Address1</label>
+					</div>
+					<div class="input-field col s4">
+						<input id="city" type="text" class="validate" readonly placeholder="  ">
+						<label for="city">City</label>
+					</div>
+					<div class="input-field col s4">
+						<input id="state" type="text" class="validate" readonly placeholder="  ">
+						<label for="state">State</label>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="input-field col s4">
+						<input id="country" type="text" class="validate" readonly placeholder="  ">
+						<label for="country">Country</label>
+					</div>
+					<div class="input-field col s4">
+						<input id="zipcode" type="text" class="validate" placeholder="XXXXXX" readonly>
+						<label for="zipcode">Zipcode</label>
+					</div>
+										
+				</div>
+				<div class="row">
+					<div class="input-field col s4">
+						<input id="datepicker" type="date" class="datepicker" class="validate" readonly placeholder="  ">
+						<label for="datepicker">Date of Birth</label>
+					</div>
+					<div class="input-field col s4">
+						<input id="Phone_number" type="text" class="validate" readonly placeholder="  ">
+						<label for="Phone_number">Phone number</label>
+					</div>
+				</div>
+				<div id="tuckdetails">
+				<div class="row">
+				<div class="input-field col s4">
+						<input id="ssn" type="text" class="validate" readonly  placeholder="  ">
+						<label for="ssn">SSN</label>
+					</div>
+					<div class="input-field col s4">
+						<input id="license" type="text" class="validate" readonly placeholder="  ">
+						<label for="license">Driving License number</label>
+					</div>
+					<div class="input-field col s4">
+						<input id="licenseExpiryDate" type="date" class="datepicker" class="validate" readonly placeholder="  ">
+						<label for="licenseExpiryDate">License Expiry Date</label>
+					</div>
+				</div>
+				 <h3>Trucks List</h3>
+      <table class = "centered" style="width:100%" id="table">
+         <thead>
+            <tr><th>No.</th>
+            <th>Capacity</th>
+               <th>Make</th>
+               <th>Model</th>
+			   <th>Year</th>
+            </tr>
+         </thead>
+         
+         <tbody>
+      
+         </tbody>
+      </table>
+			<!-- <h5 class="teal-text" >Truck details</h3>
+				<div class="row">
+				<div class="input-field col s4">
+			<select id="make">
+	<option value="" disabled selected id="makevalue">Make</option>		
+<Label>Make</Label>
+  
+</select>
+   
+  </div>
+				<div class="input-field col s4">
+<select id="model">
+	<option value="" disabled selected id="modelvalue">Model</option>		
+  <Label>Model</Label>
+</select>
+    
+  </div>
+		<div class="input-field col s4">
+   <select id="year">
+	<option value="" disabled selected id="yearvalue">Year</option>		
+  <Label>Year</Label>
+</select>
+ -->
+  </div>
+  	
+  </div>
+  </div>
+				
+		</div>
+				
+		
+			</div>
+		</form>
+	</div>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

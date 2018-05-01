@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta name="msapplication-TileColor" content="#00bcd4">
+  <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+  
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+     
+ <link rel = "stylesheet"
+  href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script> 
+
+</head>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/booktrip.js"></script>
+<body>
+  <!-- Start Page Loading -->
+  <div id="loader-wrapper">
+      <div id="loader"></div>        
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+  </div>
+
+        <div class="container">
+          <div class="section">
+
+                <!-- Form with placeholder -->
+                <div class="col s12 m12 l6">
+                  <div class="card-panel">
+                    <h4 class="header2">Book A Truck</h4>
+                    
+                      <form class="col s12">
+                  <div class="row">
+			
+					<div class="input-field col s4">
+						<input id="start_date" type="date" class="datepicker" class="validate">
+						
+						<label for="start_date">Truck Start date time:</label>
+					</div>
+					<div class="input-field col s4">
+						 <input id="start_time" class="timepicker" type="time">
+					
+					</div>
+				
+      </div>
+  				  <div class="row">
+			
+					<div class="input-field col s4">
+						<input id="End_date" type="date" class="datepicker" class="validate">
+						
+						<label for="datepicker">Truck End date time:</label>
+					</div>
+					<div class="input-field col s4">
+						 <input id="End_time" class="timepicker" type="time">
+						
+					</div>
+	  </div>
+	 			  <div class="row">
+			
+					<div class="input-field col s4">
+						<input id="Start_add" type="text" class="validate" placeholder=" ">
+
+						<label for="Start_add">Trip Start Address</label>
+						
+					</div>
+					<div class="input-field col s4">
+						<input id="End_add" type="text" class="validate" placeholder=" ">
+
+						<label for="End_add">Trip End Address</label>
+						
+					</div>
+	  </div>
+      			  <div class="row">
+		        <div class="input-field col s4">
+						<input id="capacity" type="text" class="validate" placeholder="min capacity:100tons">
+
+						<label for="capacity">Capacity(tons)</label>
+						
+					</div>
+		<span style=color:black>Choose :</span>
+    <label>
+      <input class="with-gap" name="group3" type="radio" id="withdriver" />
+      <span style=color:black>With Driver</span>
+    </label>
+  <label>
+      
+      <span></span>
+    </label>
+    <label>
+      <input class="with-gap" name="group3" type="radio" id="withoutdriver"  />
+      <span style=color:black>Without Driver</span>
+    </label>
+				
+				</div>
+                  <div class="row">
+                          <div class="row">
+                            <div class="input-field col s12">
+							<a href="TripConfirm.html" id="login" class="btn-large waves-effect waves-light teal lighten-1"  OnClick="bookTrip()">Submit</a>
+                             </button>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    <!--materialize js-->
+    <script type="text/javascript" src="js/materialize.js"></script>
+   <script type="text/javascript" src="js/materialize.min.js"></script>
+  
+    
+</body>
+
+</html>
